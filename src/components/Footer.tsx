@@ -144,8 +144,8 @@ const Footer = () => {
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
             <div className="text-2xl text-gold-400 mb-3">📧</div>
             <h4 className="text-white font-semibold mb-2">Email Us</h4>
-            <p className="text-gray-300">info@Ambitus.com</p>
-            <p className="text-gray-300">support@Ambitus.com</p>
+            <p className="text-gray-300">info@ambitus.com</p>
+            <p className="text-gray-300">support@ambitus.com</p>
           </div>
 
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
