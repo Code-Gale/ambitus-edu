@@ -47,7 +47,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <h3 className="font-bricolage text-3xl font-bold bg-gold-gradient bg-clip-text text-transparent mb-4">
-              StudyLux
+              Ambitus
             </h3>
             <p className="text-gray-300 mb-6 max-w-md">
               Elevating global education through premium study abroad experiences. 
@@ -144,8 +144,8 @@ const Footer = () => {
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
             <div className="text-2xl text-gold-400 mb-3">📧</div>
             <h4 className="text-white font-semibold mb-2">Email Us</h4>
-            <p className="text-gray-300">info@studylux.com</p>
-            <p className="text-gray-300">support@studylux.com</p>
+            <p className="text-gray-300">info@Ambitus.com</p>
+            <p className="text-gray-300">support@Ambitus.com</p>
           </div>
 
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
@@ -167,7 +167,7 @@ const Footer = () => {
         <div className="border-t border-gold-400/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} StudyLux. All rights reserved. Empowering global education since 2010.
+              © {currentYear} Ambitus. All rights reserved. Empowering global education since 2010.
             </p>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">
