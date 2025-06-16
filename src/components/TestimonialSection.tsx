@@ -6,27 +6,43 @@ const TestimonialSection = () => {
 
   const testimonials = [
     {
-      name: "Adaeze Okafor",
-      program: "Computer Science at University of Toronto",
-      country: "Canada",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=400&h=400&q=80",
-      quote: "Ambitus made my Canadian dream a reality. With their loan support and WAEC acceptance program, I didn't need to stress about IELTS or collateral. Now I'm studying at one of Canada's top universities.",
-      rating: 5
-    },
-    {
-      name: "Chinedu Okwu",
-      program: "Business Administration at University of Manchester",
+      name: "Momoh",
+      program: "Social work(MA) at the University of Bradford",
       country: "United Kingdom",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&h=400&q=80",
-      quote: "The financial structure Ambitus provided was exactly what I needed. No guarantors, clear repayment terms, and direct university disbursement. I'm now pursuing my MBA with peace of mind.",
+      image: "/images/momoh.jpg",
+      quote: "What I decided to study in the UK has a very good career potential, and I wanted to change my career path, the quality of teaching here is something I have never experienced before, I am more knowledgeable now than I was before I came to the UK, and I am privileged to learn from people who know so much.",
       rating: 5
     },
     {
-      name: "Funmilayo Adebayo",
-      program: "Medicine at University of Melbourne",
-      country: "Australia",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&h=400&q=80",
-      quote: "From admission support to loan facilitation, Ambitus guided me through every step. Their partnership with universities made the process smooth. I'm grateful to be studying medicine in Australia.",
+      name: "Joseph",
+      program: "International Relations At the University of Bradford",
+      country: "United Kingdom",
+      image: "/images/joseph.jpg",
+      quote: "Studying here in the UK has brought me closer to my love for the beautiful game, I have been surrounded by history and culture, and I've had careers advice and help already meeting future employers, each experience whilst studying here has helped expand my horizons, opening doors to new opportunities both here, and beyond.",
+      rating: 5
+    },
+    {
+      name: "Alero",
+      program: "Conestoga College, Ontario,Canada",
+      country: "Canada",
+      image: "/images/alero.jpg",
+      quote: "I started this journey when I contacted QC investment (AMBITUS) to get assistance with enrollment into a canadian college, one thing I'm really grateful for is the full support I received, I had a million and one questions and they were always willing to respond even when I reached out by 12 midnight or 1am, the admission came-in in less than a month, even now that I'm here in Canada, I'm still getting support.",
+      rating: 5
+    },
+    {
+      name: "Arnold",
+      program: "Welding Engineering Technology, Canada",
+      country: "Canada",
+      image: "/images/arnold.jpg",
+      quote: "As a Nigerian aspiring to further his education outside the borders of Africa at large but not knowing how to go about securing international admission or applying for student visa, with the help of QC Investment (AMBITUS), I was able to secure an admission in Canada, they guided me on how to apply for a student visa from the comfort of my home, I was able to secure my Canadian visa right here with me, and very soon I'll be leaving.",
+      rating: 5
+    },
+    {
+      name: "Samuel",
+      program: "Electrical Electronic (fully funded) At The University Of Maine",
+      country: "United States Of America",
+      image: "/images/arnold.jpg",
+      quote: "I am a graduate student at university of Maine, I successfully resumed for my master's degree program before 2022, I want to take the time to appreciate QC Investment (AMBITUS) for the full support offered from application to enrollment, they helped with how to navigate the financial requirements, and they were there for me as well at the visa application stage even down to how to answer questions, so if you're looking for an empowering partner, QC investment is your invesment.",
       rating: 5
     }
   ];

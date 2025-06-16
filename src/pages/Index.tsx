@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import TestimonialSection from '../components/TestimonialSection';
@@ -8,6 +7,7 @@ import LoansSection from '../components/LoansSection';
 import FAQSection from '../components/FAQSection';
 import RegistrationSection from '../components/RegistrationSection';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ui/ScrollToTop';
 
 const Index = () => {
   return (
@@ -21,6 +21,7 @@ const Index = () => {
       <FAQSection />
       <RegistrationSection />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

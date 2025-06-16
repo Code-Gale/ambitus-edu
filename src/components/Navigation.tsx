@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 const Navigation = () => {
@@ -31,10 +30,12 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="font-bricolage text-2xl font-bold bg-gold-gradient bg-clip-text text-transparent relative">
-                Ambitus
-                <div className="absolute inset-0 bg-gold-gradient bg-clip-text text-transparent animate-gold-shimmer"></div>
-              </h1>
+              <img
+                src="/images/logo.png"
+                alt="Ambitus Logo"
+                className="h-10 w-auto"
+                draggable="false"
+              />
             </div>
 
             {/* Desktop Navigation */}
