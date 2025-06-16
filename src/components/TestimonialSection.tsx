@@ -41,7 +41,7 @@ const TestimonialSection = () => {
       name: "Samuel",
       program: "Electrical Electronic (fully funded) At The University Of Maine",
       country: "United States Of America",
-      image: "/images/arnold.jpg",
+      image: "/images/samuel.jpg",
       quote: "I am a graduate student at university of Maine, I successfully resumed for my master's degree program before 2022, I want to take the time to appreciate QC Investment (AMBITUS) for the full support offered from application to enrollment, they helped with how to navigate the financial requirements, and they were there for me as well at the visa application stage even down to how to answer questions, so if you're looking for an empowering partner, QC investment is your invesment.",
       rating: 5
     }
