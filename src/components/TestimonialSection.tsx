@@ -6,27 +6,27 @@ const TestimonialSection = () => {
 
   const testimonials = [
     {
-      name: "Sarah Chen",
-      program: "MBA at Oxford University",
-      country: "United Kingdom",
+      name: "Adaeze Okafor",
+      program: "Computer Science at University of Toronto",
+      country: "Canada",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=400&h=400&q=80",
-      quote: "StudyLux transformed my career trajectory. The personalized guidance and luxury accommodations made my Oxford experience unforgettable. I landed my dream job at Goldman Sachs right after graduation.",
+      quote: "Ambitus made my Canadian dream a reality. With their loan support and WAEC acceptance program, I didn't need to stress about IELTS or collateral. Now I'm studying at one of Canada's top universities.",
       rating: 5
     },
     {
-      name: "Marcus Johnson",
-      program: "Computer Science at MIT",
-      country: "United States",
+      name: "Chinedu Okwu",
+      program: "Business Administration at University of Manchester",
+      country: "United Kingdom",
       image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&h=400&q=80",
-      quote: "The support system at StudyLux is incredible. From visa assistance to cultural integration, they handled everything. Now I'm working at Apple as a senior engineer. Best investment I've ever made.",
+      quote: "The financial structure Ambitus provided was exactly what I needed. No guarantors, clear repayment terms, and direct university disbursement. I'm now pursuing my MBA with peace of mind.",
       rating: 5
     },
     {
-      name: "Emma Rodriguez",
+      name: "Funmilayo Adebayo",
       program: "Medicine at University of Melbourne",
       country: "Australia",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&h=400&q=80",
-      quote: "StudyLux made my medical school dreams come true. The scholarship opportunities and academic mentoring were exceptional. I'm now a resident at one of Australia's top hospitals.",
+      quote: "From admission support to loan facilitation, Ambitus guided me through every step. Their partnership with universities made the process smooth. I'm grateful to be studying medicine in Australia.",
       rating: 5
     }
   ];
@@ -54,10 +54,10 @@ const TestimonialSection = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="section-title">
-            Success <span className="bg-gold-gradient bg-clip-text text-transparent">Stories</span>
+            Student <span className="bg-gold-gradient bg-clip-text text-transparent">Success Stories</span>
           </h2>
           <p className="section-subtitle">
-            Join thousands of students who have transformed their futures through our premium study abroad programs
+            Join Nigerian students who have transformed their futures through our comprehensive study abroad guidance and loan facilitation
           </p>
         </div>
 

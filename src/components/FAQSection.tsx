@@ -6,28 +6,28 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What makes StudyLux different from other study abroad consultants?",
-      answer: "StudyLux offers a premium, personalized experience with exclusive partnerships with top universities, luxury accommodations, and comprehensive support throughout your entire journey. Our success rate of 95% and dedicated mentorship sets us apart."
+      question: "What makes Ambitus different from other study abroad consultants?",
+      answer: "Ambitus provides end-to-end guidance specifically tailored for Nigerian students, including international student loan facilitation, WAEC/NECO acceptance programs, and partnerships with 650+ universities across 12+ countries. We focus on removing financial barriers and simplifying the complex process of studying abroad."
     },
     {
-      question: "How do I qualify for scholarships and financial aid?",
-      answer: "Scholarships are awarded based on academic merit, leadership potential, and program-specific criteria. Our team works with you to identify and apply for the best funding opportunities, including exclusive StudyLux scholarships available only to our students."
+      question: "Do I really need collateral or a co-signer for the student loan?",
+      answer: "No, you don't need collateral or wealthy guarantors. Our loans are based on your admission offer and basic financial profile. We believe your academic potential and future earning capacity are sufficient backing for your education investment."
     },
     {
-      question: "What is included in the StudyLux program package?",
-      answer: "Our comprehensive package includes university application assistance, visa processing, accommodation arrangements, pre-departure orientation, ongoing academic support, career counseling, and access to our global alumni network."
+      question: "Can I use my WAEC/NECO results instead of IELTS?",
+      answer: "Yes! Through our university partnerships, many institutions accept WAEC/NECO qualifications, eliminating the need for additional English proficiency tests. This makes the admission process more accessible for Nigerian students."
     },
     {
-      question: "How long does the application process typically take?",
-      answer: "The complete process from initial consultation to university enrollment typically takes 4-6 months. However, this can vary depending on the program, country, and your preparation timeline. We provide detailed timelines during your consultation."
+      question: "How long do I have to repay my student loan?",
+      answer: "We offer flexible repayment terms of up to 10 years, designed to be manageable based on your post-graduation earning potential. The repayment structure is tailored to give you financial stability as you start your career."
     },
     {
-      question: "Do you assist with visa applications and documentation?",
-      answer: "Yes, our expert visa consultants guide you through the entire visa application process, document preparation, interview coaching, and liaison with embassy officials to ensure a smooth approval process."
+      question: "How are the loan funds disbursed?",
+      answer: "Funds are disbursed directly to your university in a secure and transparent manner. This ensures that your tuition and approved expenses are covered while maintaining accountability in the loan process."
     },
     {
       question: "What ongoing support do you provide after I arrive at university?",
-      answer: "We provide continuous support including academic mentoring, career guidance, cultural integration assistance, and access to our local representatives in your study destination for any emergencies or assistance needed."
+      answer: "We provide continuous support including academic guidance, financial planning assistance, and access to our alumni network. Our goal is to ensure your success throughout your entire study abroad journey, not just getting you admitted."
     }
   ];
 
@@ -45,7 +45,7 @@ const FAQSection = () => {
             Frequently Asked <span className="bg-gold-gradient bg-clip-text text-transparent">Questions</span>
           </h2>
           <p className="section-subtitle">
-            Get answers to common questions about our premium study abroad programs
+            Get answers to common questions about our study abroad guidance and international student loan services
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const FAQSection = () => {
         {/* Contact CTA */}
         <div className="text-center mt-12">
           <p className="text-gray-300 mb-6">
-            Still have questions? Our expert consultants are here to help.
+            Still have questions? Our expert consultants are here to help you navigate your study abroad journey.
           </p>
           <button className="gold-button">
             Schedule Free Consultation

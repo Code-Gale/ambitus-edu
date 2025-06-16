@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Journey', href: '#journey' },
+    { name: 'Services', href: '#services' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Partners', href: '#partners' },
     { name: 'FAQ', href: '#faq' }
@@ -32,7 +32,7 @@ const Navigation = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <h1 className="font-bricolage text-2xl font-bold bg-gold-gradient bg-clip-text text-transparent relative">
-                StudyLux
+                Ambitus
                 <div className="absolute inset-0 bg-gold-gradient bg-clip-text text-transparent animate-gold-shimmer"></div>
               </h1>
             </div>
@@ -56,7 +56,7 @@ const Navigation = () => {
             {/* Register Button & Mobile Menu Button */}
             <div className="flex items-center space-x-4">
               <button className="gold-button text-sm">
-                Register Now
+                Apply Now
               </button>
               
               {/* Mobile menu button */}

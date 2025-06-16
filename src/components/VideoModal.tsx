@@ -53,7 +53,7 @@ const VideoModal = ({ isOpen, onClose }: VideoModalProps) => {
         <div className="aspect-video">
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0"
-            title="StudyLux Welcome Video"
+            title="Ambitus Welcome Video"
             className="w-full h-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -62,10 +62,10 @@ const VideoModal = ({ isOpen, onClose }: VideoModalProps) => {
 
         {/* Video Info */}
         <div className="p-6 bg-gradient-to-r from-forest-800 to-forest-900">
-          <h3 className="text-xl font-semibold text-white mb-2">Welcome to StudyLux</h3>
+          <h3 className="text-xl font-semibold text-white mb-2">Welcome to Ambitus</h3>
           <p className="text-gray-300">
-            Discover how our premium study abroad programs can transform your academic and professional future. 
-            Join thousands of students who have already begun their global journey with us.
+            Discover how our end-to-end study abroad guidance can help you achieve your international education dreams. 
+            Join thousands of Nigerian students who have successfully navigated their journey with us.
           </p>
         </div>
       </div>

@@ -8,40 +8,40 @@ const HeroSection = () => {
 
   const slides = [
     {
-      title: "Discover Your Global",
-      titleHighlight: "Academic Journey",
-      subtitle: "Embark on a transformative educational experience",
+      title: "End-to-end study abroad",
+      titleHighlight: "guidance",
+      subtitle: "Empowering students to plan boldly amidst the complexities of international education processing and financial uncertainties",
       benefits: [
-        "Premium university partnerships worldwide",
-        "Personalized academic guidance",
-        "Luxury accommodation & lifestyle",
-        "Career acceleration programs"
+        "Comprehensive admission support",
+        "International student loan facilitation",
+        "650+ university partnerships worldwide",
+        "Tailored financial planning"
       ],
-      cta: "Begin Your Journey"
+      cta: "Start Your Journey"
     },
     {
-      title: "Unlock World-Class",
-      titleHighlight: "Education",
-      subtitle: "Study at the most prestigious institutions globally",
+      title: "Admission",
+      titleHighlight: "Support",
+      subtitle: "Navigate international education with expert guidance and comprehensive support",
       benefits: [
-        "Top-ranked universities access",
-        "Scholarship opportunities",
-        "Cultural immersion programs",
-        "Lifetime alumni network"
+        "12+ countries coverage",
+        "650+ university partners",
+        "WAEC/NECO instead of IELTS",
+        "Expert admission guidance"
       ],
       cta: "Explore Programs"
     },
     {
-      title: "Transform Your",
-      titleHighlight: "Future",
-      subtitle: "Graduate with global perspective and prestigious degree",
+      title: "Financial",
+      titleHighlight: "Structure",
+      subtitle: "Structured financing solutions to make your international education dreams achievable",
       benefits: [
-        "International career opportunities",
-        "Industry connections",
-        "Research excellence",
-        "Personal growth & development"
+        "Financial integration with parent company",
+        "Local microfinance partnerships",
+        "Instant scholarship initiatives",
+        "No collateral required loans"
       ],
-      cta: "Start Application"
+      cta: "Check Eligibility"
     }
   ];
 
@@ -139,8 +139,8 @@ const HeroSection = () => {
 
                 {/* Video Info */}
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-semibold text-lg mb-1">Welcome to StudyLux</h3>
-                  <p className="text-gray-300 text-sm">Discover your premium study abroad experience</p>
+                  <h3 className="text-white font-semibold text-lg mb-1">Welcome to Ambitus</h3>
+                  <p className="text-gray-300 text-sm">Your pathway to international education</p>
                 </div>
               </div>
             </div>
