@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const RegistrationSection = () => {
@@ -34,8 +33,6 @@ const RegistrationSection = () => {
     if (!formData.email.trim()) newErrors.email = 'Email is required';
     else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Email is invalid';
     if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
-    if (!formData.country) newErrors.country = 'Country is required';
-    if (!formData.program) newErrors.program = 'Program is required';
     if (!formData.studyLevel) newErrors.studyLevel = 'Study level is required';
 
     setErrors(newErrors);
@@ -156,14 +153,12 @@ const RegistrationSection = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-300 mb-2">Country *</label>
+                  <label className="block text-gray-300 mb-2">Country</label>
                   <select
                     name="country"
                     value={formData.country}
                     onChange={handleInputChange}
-                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                      errors.country ? 'border-red-400' : 'border-gold-400/30'
-                    }`}
+                    className="w-full p-3 bg-forest-800 border border-gold-400/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300"
                   >
                     <option value="">Select your country</option>
                     <option value="US">United States</option>
@@ -174,7 +169,6 @@ const RegistrationSection = () => {
                     <option value="FR">France</option>
                     <option value="Other">Other</option>
                   </select>
-                  {errors.country && <p className="text-red-400 text-sm mt-1">{errors.country}</p>}
                 </div>
 
                 <div>
@@ -198,14 +192,12 @@ const RegistrationSection = () => {
               </div>
 
               <div>
-                <label className="block text-gray-300 mb-2">Program of Interest *</label>
+                <label className="block text-gray-300 mb-2">Program of Interest</label>
                 <select
                   name="program"
                   value={formData.program}
                   onChange={handleInputChange}
-                  className={`w-full p-3 bg-forest-800 border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                    errors.program ? 'border-red-400' : 'border-gold-400/30'
-                  }`}
+                  className="w-full p-3 bg-forest-800 border border-gold-400/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300"
                 >
                   <option value="">Select program</option>
                   <option value="business">Business & Management</option>
@@ -216,7 +208,6 @@ const RegistrationSection = () => {
                   <option value="law">Law</option>
                   <option value="other">Other</option>
                 </select>
-                {errors.program && <p className="text-red-400 text-sm mt-1">{errors.program}</p>}
               </div>
 
               <div>

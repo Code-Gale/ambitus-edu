@@ -86,10 +86,10 @@ const FAQSection = () => {
         {/* Contact CTA */}
         <div className="text-center mt-12">
           <p className="text-gray-300 mb-6">
-            Still have questions? Our expert consultants are here to help you navigate your study abroad journey.
+            Still have questions? Our Student advisor will listen to your interests and help you navigate your choices.
           </p>
           <button className="gold-button">
-            Schedule Free Consultation
+            Schedule Quick Discovery
           </button>
         </div>
       </div>

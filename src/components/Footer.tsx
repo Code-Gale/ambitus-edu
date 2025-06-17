@@ -50,8 +50,7 @@ const Footer = () => {
               Ambitus
             </h3>
             <p className="text-gray-300 mb-6 max-w-md">
-              Elevating global education through premium study abroad experiences. 
-              Your gateway to world-class universities and transformative academic journeys.
+              Empowering students to plan confidently amidst international education complexities and financial uncertainties.
             </p>
             
             {/* Social Links */}
@@ -167,13 +166,13 @@ const Footer = () => {
         <div className="border-t border-gold-400/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Ambitus. All rights reserved. Empowering global education since 2010.
+              © {currentYear} Ambitus Powered by QC Investments. All rights reserved. Empowering students to plan confidently amidst international education complexities and financial uncertainties since 2010.
             </p>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <span>🌍 Available in 50+ countries</span>
+              <span>🌍 Available in 12+ countries</span>
               <span>⭐ 95% success rate</span>
-              <span>🎓 10,000+ students placed</span>
+              <span>🎓 10 days admission securance period</span>
             </div>
           </div>
         </div>

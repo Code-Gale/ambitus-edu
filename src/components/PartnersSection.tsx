@@ -83,10 +83,10 @@ const PartnersSection = () => {
         {/* Statistics */}
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { number: "500+", label: "Partner Universities" },
-            { number: "50+", label: "Countries" },
+            { number: "650+", label: "Partner Universities" },
+            { number: "12+", label: "Countries" },
             { number: "95%", label: "Success Rate" },
-            { number: "10,000+", label: "Students Placed" }
+            { number: "10 days", label: "Admission Securance Period" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl lg:text-4xl font-bold bg-gold-gradient bg-clip-text text-transparent mb-2">

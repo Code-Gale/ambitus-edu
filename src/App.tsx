@@ -24,7 +24,7 @@ const App = () => {
   useEffect(() => {
     Analytics.init({
       siteId: 'f81fb17d-bf13-4f82-9833-37ba8a4d597b',
-      apiEndpoint: 'https://olhvinclxqcxesgydkql.supabase.co'
+      apiEndpoint: 'https://olhvinclxqcxesgydkql.supabase.co/functions/v1'
     });
   }, []);
 

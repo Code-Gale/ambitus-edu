@@ -49,7 +49,7 @@ const TestimonialSection = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [testimonials.length]);
@@ -72,7 +72,7 @@ const TestimonialSection = () => {
             Student <span className="bg-gold-gradient bg-clip-text text-transparent">Success Stories</span>
           </h2>
           <p className="section-subtitle">
-            Join Nigerian students who have transformed their futures through our comprehensive study abroad guidance and loan facilitation
+            Join Nigerian students who have transformed their futures through our comprehensive study abroad guidance and financial facilitation
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const TestimonialSection = () => {
           </div>
 
           {/* Testimonial Card */}
-          <div className="flex-1">
+          <div className="relative">
             <div className="glass-card p-8 md:p-12 rounded-3xl bg-wood-grain w-full">
               <div className="flex flex-col lg:flex-row items-center gap-8">
                 {/* Student Photo */}
@@ -112,7 +112,7 @@ const TestimonialSection = () => {
                 </div>
 
                 {/* Testimonial Content */}
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1">
                   <div className="mb-4">
                     {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                       <span key={i} className="text-gold-400 text-xl">★</span>
@@ -138,20 +138,26 @@ const TestimonialSection = () => {
               </div>
             </div>
 
-            {/* Dots Navigation */}
-            <div className="flex justify-center mt-8 space-x-3">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentTestimonial 
-                      ? 'bg-gold-400 scale-125' 
-                      : 'bg-white/30 hover:bg-white/50'
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
+            {/* Mobile Arrows - Positioned on sides */}
+            <div className="flex md:hidden justify-between items-center absolute top-1/2 -translate-y-1/2 w-full px-2">
+              <button
+                onClick={prevTestimonial}
+                className="w-10 h-10 bg-gold-gradient rounded-full flex items-center justify-center text-forest-950 hover:scale-110 transition-transform duration-300 shadow-xl -ml-4"
+                aria-label="Previous testimonial"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={nextTestimonial}
+                className="w-10 h-10 bg-gold-gradient rounded-full flex items-center justify-center text-forest-950 hover:scale-110 transition-transform duration-300 shadow-xl -mr-4"
+                aria-label="Next testimonial"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
           </div>
 
@@ -167,28 +173,22 @@ const TestimonialSection = () => {
               </svg>
             </button>
           </div>
+        </div>
 
-          {/* Arrows below card on mobile */}
-          <div className="flex md:hidden justify-center items-center gap-6 mt-6">
+        {/* Dots Navigation */}
+        <div className="flex justify-center mt-8 space-x-3">
+          {testimonials.map((_, index) => (
             <button
-              onClick={prevTestimonial}
-              className="w-12 h-12 bg-gold-gradient rounded-full flex items-center justify-center text-forest-950 hover:scale-110 transition-transform duration-300 shadow-xl"
-              aria-label="Previous testimonial"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              onClick={nextTestimonial}
-              className="w-12 h-12 bg-gold-gradient rounded-full flex items-center justify-center text-forest-950 hover:scale-110 transition-transform duration-300 shadow-xl"
-              aria-label="Next testimonial"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
+              key={index}
+              onClick={() => setCurrentTestimonial(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentTestimonial 
+                  ? 'bg-gold-400 scale-125' 
+                  : 'bg-white/30 hover:bg-white/50'
+              }`}
+              aria-label={`Go to testimonial ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>

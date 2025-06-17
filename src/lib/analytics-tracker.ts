@@ -21,6 +21,7 @@ export class StatfulAnalytics {
   private sessionId: string;
   private apiEndpoint: string;
   private initialized = false;
+  private isDevelopment = process.env.NODE_ENV === 'development';
 
   constructor() {
     this.sessionId = this.generateSessionId();
@@ -38,8 +39,10 @@ export class StatfulAnalytics {
     this.config.trackPerformance = this.config.trackPerformance !== false;
     this.config.trackOutboundLinks = this.config.trackOutboundLinks !== false;
 
-    // Set API endpoint
-    this.apiEndpoint = this.config.apiEndpoint || 'https://your-project.supabase.co/functions/v1';
+    // Set API endpoint with /functions/v1
+    this.apiEndpoint = this.config.apiEndpoint?.endsWith('/functions/v1') 
+      ? this.config.apiEndpoint 
+      : `${this.config.apiEndpoint}/functions/v1`;
     this.initialized = true;
 
     // Auto-track initial page view
@@ -202,14 +205,24 @@ export class StatfulAnalytics {
   }
 
   private async sendData(endpoint: string, data: any) {
+    // Skip sending data in development mode
+    if (this.isDevelopment) {
+      console.log('[StatfulAnalytics] Development mode - data:', data);
+      return;
+    }
+
     try {
       const response = await fetch(`${this.apiEndpoint}${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type'
         },
         body: JSON.stringify(data),
-        keepalive: true
+        keepalive: true,
+        mode: 'cors'
       });
 
       if (!response.ok) {
