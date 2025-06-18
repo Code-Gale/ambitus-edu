@@ -245,7 +245,7 @@ const RegistrationSection = () => {
                   {
                     step: "1",
                     title: "Consultation Scheduling",
-                    description: "Our expert counselor will contact you within 24 hours to schedule your free consultation."
+                    description: "Our expert counselor will contact you within 24 hours to schedule your consultation."
                   },
                   {
                     step: "2",
@@ -278,9 +278,9 @@ const RegistrationSection = () => {
 
             <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
               <div className="text-gold-400 text-4xl mb-4">🎯</div>
-              <h4 className="text-lg font-semibold text-white mb-2">Free Consultation</h4>
+              <h4 className="text-lg font-semibold text-white mb-2">Scheduled Consultation</h4>
               <p className="text-gray-300 text-sm">
-                Get expert guidance on your study abroad journey with our complimentary consultation session.
+                Get expert guidance on your study abroad journey with our consultation session.
               </p>
             </div>
           </div>

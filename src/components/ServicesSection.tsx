@@ -102,7 +102,7 @@ const ServicesSection = () => {
           </div>
 
           {/* 2. International Student Loans */}
-          <div className="glass-card p-8 rounded-3xl bg-wood-grain animate-fade-in">
+          {/* <div className="glass-card p-8 rounded-3xl bg-wood-grain animate-fade-in">
             <h3 className="text-3xl font-bricolage font-semibold text-gold-400 mb-6 text-center">
               INTERNATIONAL STUDENT LOANS
             </h3>
@@ -131,7 +131,7 @@ const ServicesSection = () => {
                 Check Your Eligibility
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* 3. Financing Your Tuition Deposit */}
           <div className="glass-card p-8 rounded-3xl bg-wood-grain animate-slide-in-right">
