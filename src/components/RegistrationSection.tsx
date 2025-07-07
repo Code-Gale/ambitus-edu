@@ -14,6 +14,7 @@ const RegistrationSection = () => {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -41,29 +42,45 @@ const RegistrationSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!validateForm()) return;
-
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    console.log('Form submitted:', formData);
-    alert('Registration successful! We will contact you shortly.');
-    
-    // Reset form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      country: '',
-      program: '',
-      studyLevel: '',
-      startDate: ''
-    });
-    
+    setSubmitStatus('idle');
+    try {
+      const response = await fetch('https://formspree.io/f/mpwrevve', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          country: formData.country,
+          program: formData.program,
+          studyLevel: formData.studyLevel,
+          startDate: formData.startDate,
+        }),
+      });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          country: '',
+          program: '',
+          studyLevel: '',
+          startDate: ''
+        });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    }
     setIsSubmitting(false);
   };
 
@@ -230,6 +247,12 @@ const RegistrationSection = () => {
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
               </button>
+              {submitStatus === 'success' && (
+                <p className="text-green-400 text-center mt-4">Registration successful! We will contact you shortly.</p>
+              )}
+              {submitStatus === 'error' && (
+                <p className="text-red-400 text-center mt-4">There was an error submitting your registration. Please try again later.</p>
+              )}
             </form>
           </div>
 
