@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Toaster, toast } from 'react-hot-toast';
 
 const RegistrationSection = () => {
   const [formData, setFormData] = useState({
@@ -75,17 +76,21 @@ const RegistrationSection = () => {
           studyLevel: '',
           startDate: ''
         });
+        toast.success('Registration successful! We will contact you shortly.');
       } else {
         setSubmitStatus('error');
+        toast.error('There was an error submitting your registration. Please try again later.');
       }
     } catch (error) {
       setSubmitStatus('error');
+      toast.error('There was an error submitting your registration. Please try again later.');
     }
     setIsSubmitting(false);
   };
 
   return (
     <section className="py-20 relative">
+      <Toaster position="top-center" />
       <div className="absolute inset-0 bg-gradient-to-b from-forest-800 to-forest-950"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -247,12 +252,6 @@ const RegistrationSection = () => {
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
               </button>
-              {submitStatus === 'success' && (
-                <p className="text-green-400 text-center mt-4">Registration successful! We will contact you shortly.</p>
-              )}
-              {submitStatus === 'error' && (
-                <p className="text-red-400 text-center mt-4">There was an error submitting your registration. Please try again later.</p>
-              )}
             </form>
           </div>
 
