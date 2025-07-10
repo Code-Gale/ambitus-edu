@@ -67,7 +67,10 @@ const JourneySection = () => {
           ))}
         </div>
         <div className="text-center mt-16">
-          <button className="gold-button text-lg">
+          <button className="gold-button text-lg" onClick={() => {
+            const el = document.getElementById('registration');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }}>
             Start Your Journey Today
           </button>
         </div>

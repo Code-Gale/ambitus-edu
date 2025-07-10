@@ -143,22 +143,26 @@ const Footer = () => {
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
             <div className="text-2xl text-gold-400 mb-3">📧</div>
             <h4 className="text-white font-semibold mb-2">Email Us</h4>
-            <p className="text-gray-300">info@ambitus.com</p>
-            <p className="text-gray-300">support@ambitus.com</p>
+            <p className="text-gray-300">ambituseducation@gmail.com</p>
+            {/* <p className="text-gray-300">support@ambitus.com</p> */}
           </div>
 
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
             <div className="text-2xl text-gold-400 mb-3">📞</div>
             <h4 className="text-white font-semibold mb-2">Call Us</h4>
-            <p className="text-gray-300">+1 (555) 123-4567</p>
-            <p className="text-gray-300">+1 (555) 987-6543</p>
+            <p className="text-gray-300">+234-907-658-2822</p>
+            {/* <p className="text-gray-300">+234-907-658-2822</p> */}
           </div>
 
           <div className="glass-card p-6 rounded-2xl bg-wood-grain text-center">
             <div className="text-2xl text-gold-400 mb-3">📍</div>
             <h4 className="text-white font-semibold mb-2">Visit Us</h4>
-            <p className="text-gray-300">123 Education Plaza</p>
-            <p className="text-gray-300">New York, NY 10001</p>
+            <p className="text-gray-300">Unit G8
+Lagos Technology Incubation Center 
+1 Oba Ogunji Road, 
+</p>
+            <p className="text-gray-300">Off Ogba-Agege Road
+            Lagos State, Nigeria</p>
           </div>
         </div>
 

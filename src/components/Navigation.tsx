@@ -56,7 +56,10 @@ const Navigation = () => {
 
             {/* Register Button & Mobile Menu Button */}
             <div className="flex items-center space-x-4 sm:space-x-6">
-              <button className="gold-button text-xs sm:text-sm px-4 sm:px-8 py-2 sm:py-3 rounded-lg sm:rounded-full">
+              <button className="gold-button text-xs sm:text-sm px-4 sm:px-8 py-2 sm:py-3 rounded-lg sm:rounded-full" onClick={() => {
+                const el = document.getElementById('registration');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}>
                 Apply Now
               </button>
               

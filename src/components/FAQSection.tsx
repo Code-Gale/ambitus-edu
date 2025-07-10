@@ -88,7 +88,10 @@ const FAQSection = () => {
           <p className="text-gray-300 mb-6">
             Still have questions? Our Student advisor will listen to your interests and help you navigate your choices.
           </p>
-          <button className="gold-button">
+          <button className="gold-button" onClick={() => {
+            const el = document.getElementById('registration');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }}>
             Schedule Quick Discovery
           </button>
         </div>

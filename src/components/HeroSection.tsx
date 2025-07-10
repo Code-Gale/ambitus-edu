@@ -53,6 +53,11 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, [slides.length]);
 
+  const scrollToRegistration = () => {
+    const el = document.getElementById('registration');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with parallax effect */}
@@ -89,7 +94,7 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <button className="gold-button text-lg mb-8">
+            <button className="gold-button text-lg mb-8" onClick={scrollToRegistration}>
               {slides[currentSlide].cta}
             </button>
 

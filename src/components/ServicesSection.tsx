@@ -1,4 +1,8 @@
 const ServicesSection = () => {
+  const scrollToRegistration = () => {
+    const el = document.getElementById('registration');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section id="services" className="py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-forest-950 to-forest-900"></div>
@@ -93,8 +97,7 @@ const ServicesSection = () => {
                 ].map((item, index) => (
                   <div key={index} className="glass-card p-4 rounded-xl bg-forest-800/30 text-center">
                     <h6 className="text-gold-400 font-semibold">{item.country}</h6>
-                    <p className="text-white text-lg font-bold">{item.fee}</p>
-                    <p className="text-gray-300 text-sm">{item.schools}</p>
+                    <p className="text-gray-300 text-lg font-bold">{item.schools}</p>
                   </div>
                 ))}
               </div>
@@ -163,7 +166,7 @@ const ServicesSection = () => {
                 </div>
               </div>
 
-              <button className="gold-button">
+              <button className="gold-button" onClick={scrollToRegistration}>
                 Learn More About Deposit Financing
               </button>
             </div>

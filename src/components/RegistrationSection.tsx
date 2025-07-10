@@ -89,7 +89,7 @@ const RegistrationSection = () => {
   };
 
   return (
-    <section className="py-20 relative">
+    <section id="registration" className="py-20 relative">
       <Toaster position="top-center" />
       <div className="absolute inset-0 bg-gradient-to-b from-forest-800 to-forest-950"></div>
       
@@ -119,9 +119,7 @@ const RegistrationSection = () => {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                      errors.firstName ? 'border-red-400' : 'border-gold-400/30'
-                    }`}
+                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${errors.firstName ? 'border-red-400' : 'border-gold-400/30'}`}
                     placeholder="Enter your first name"
                   />
                   {errors.firstName && <p className="text-red-400 text-sm mt-1">{errors.firstName}</p>}
@@ -134,9 +132,7 @@ const RegistrationSection = () => {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                      errors.lastName ? 'border-red-400' : 'border-gold-400/30'
-                    }`}
+                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${errors.lastName ? 'border-red-400' : 'border-gold-400/30'}`}
                     placeholder="Enter your last name"
                   />
                   {errors.lastName && <p className="text-red-400 text-sm mt-1">{errors.lastName}</p>}
@@ -150,9 +146,7 @@ const RegistrationSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                    errors.email ? 'border-red-400' : 'border-gold-400/30'
-                  }`}
+                  className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${errors.email ? 'border-red-400' : 'border-gold-400/30'}`}
                   placeholder="Enter your email address"
                 />
                 {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
@@ -165,9 +159,7 @@ const RegistrationSection = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                    errors.phone ? 'border-red-400' : 'border-gold-400/30'
-                  }`}
+                  className={`w-full p-3 bg-forest-800 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${errors.phone ? 'border-red-400' : 'border-gold-400/30'}`}
                   placeholder="Enter your phone number"
                 />
                 {errors.phone && <p className="text-red-400 text-sm mt-1">{errors.phone}</p>}
@@ -199,9 +191,7 @@ const RegistrationSection = () => {
                     name="studyLevel"
                     value={formData.studyLevel}
                     onChange={handleInputChange}
-                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${
-                      errors.studyLevel ? 'border-red-400' : 'border-gold-400/30'
-                    }`}
+                    className={`w-full p-3 bg-forest-800 border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300 ${errors.studyLevel ? 'border-red-400' : 'border-gold-400/30'}`}
                   >
                     <option value="">Select study level</option>
                     <option value="undergraduate">Undergraduate</option>
@@ -246,9 +236,7 @@ const RegistrationSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full gold-button py-4 text-lg font-semibold ${
-                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-                }`}
+                className={`w-full gold-button py-4 text-lg font-semibold ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
               </button>

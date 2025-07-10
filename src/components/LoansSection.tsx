@@ -1,5 +1,9 @@
 
 const LoansSection = () => {
+  const scrollToRegistration = () => {
+    const el = document.getElementById('registration');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
   const loanFeatures = [
     {
       title: "No Collateral Required",
@@ -92,7 +96,7 @@ const LoansSection = () => {
                 </div>
               ))}
             </div>
-            <button className="gold-button mt-8">
+            <button className="gold-button mt-8" onClick={scrollToRegistration}>
               Check Your Eligibility
             </button>
           </div>
