@@ -7,7 +7,7 @@ const RegistrationSection = () => {
     lastName: '',
     email: '',
     phone: '',
-    country: '',
+    destination: '',
     program: '',
     studyLevel: '',
     startDate: ''
@@ -47,22 +47,21 @@ const RegistrationSection = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
     try {
-      const response = await fetch('https://formspree.io/f/mpwrevve', {
+      const formDataToSend = new FormData();
+      formDataToSend.append('firstName', formData.firstName);
+      formDataToSend.append('lastName', formData.lastName);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone);
+      formDataToSend.append('country', formData.destination);
+      formDataToSend.append('program', formData.program);
+      formDataToSend.append('studyLevel', formData.studyLevel);
+      formDataToSend.append('startDate', formData.startDate);
+      formDataToSend.append('_subject', 'New Study Abroad Application - Ambitus');
+      formDataToSend.append('_template', 'table');
+
+      const response = await fetch('https://formsubmit.co/ambitusedu@gmail.com', {
         method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          email: formData.email,
-          phone: formData.phone,
-          country: formData.country,
-          program: formData.program,
-          studyLevel: formData.studyLevel,
-          startDate: formData.startDate,
-        }),
+        body: formDataToSend,
       });
       if (response.ok) {
         setSubmitStatus('success');
@@ -71,7 +70,7 @@ const RegistrationSection = () => {
           lastName: '',
           email: '',
           phone: '',
-          country: '',
+          destination: '',
           program: '',
           studyLevel: '',
           startDate: ''
@@ -167,14 +166,14 @@ const RegistrationSection = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-300 mb-2">Country</label>
+                  <label className="block text-gray-300 mb-2">Destination</label>
                   <select
                     name="country"
-                    value={formData.country}
+                    value={formData.destination}
                     onChange={handleInputChange}
                     className="w-full p-3 bg-forest-800 border border-gold-400/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300"
                   >
-                    <option value="">Select your country</option>
+                    <option value="">Select your destination</option>
                     <option value="US">United States</option>
                     <option value="UK">United Kingdom</option>
                     <option value="CA">Canada</option>
