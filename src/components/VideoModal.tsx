@@ -52,7 +52,7 @@ const VideoModal = ({ isOpen, onClose }: VideoModalProps) => {
         {/* Video Container */}
         <div className="aspect-video">
           <iframe
-            src="https://youtu.be/AUNUrQTrhHM?si=yhb63HSyZ3BrKtRb"
+            src="https://www.youtube.com/embed/AUNUrQTrhHM?si=yhb63HSyZ3BrKtRb"
             title="Ambitus Welcome Video"
             className="w-full h-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
