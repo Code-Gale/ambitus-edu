@@ -59,7 +59,7 @@ const RegistrationSection = () => {
       formDataToSend.append('_subject', 'New Study Abroad Application - Ambitus');
       formDataToSend.append('_template', 'table');
 
-      const response = await fetch('https://formsubmit.co/ambitusedu@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ambituseducation@gmail.com', {
         method: 'POST',
         body: formDataToSend,
       });
@@ -168,7 +168,7 @@ const RegistrationSection = () => {
                 <div>
                   <label className="block text-gray-300 mb-2">Destination</label>
                   <select
-                    name="country"
+                    name="destination"
                     value={formData.destination}
                     onChange={handleInputChange}
                     className="w-full p-3 bg-forest-800 border border-gold-400/30 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-all duration-300"
